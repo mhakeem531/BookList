@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingEnd="16dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingStart="16dip"
+        android:paddingTop="15dip">
+
+        <ImageView
+            android:id="@+id/book_cover"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="2"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorBookTitle"
+                android:textSize="16sp"
+                tools:text="introduction to \n android learning" />
+
+            <TextView
+                android:id="@+id/book_authors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textColor="@color/textColorBookAuthors"
+                android:textSize="12sp"
+                tools:text="Hakeem \n XYZ" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/book_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@color/textColorBookLanguage"
+                android:textSize="12sp"
+                tools:text="English" />
+
+            <TextView
+                android:id="@+id/pdf_availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@color/textColorBookBdfAvailability"
+                android:textSize="12sp"
+                tools:text="PDF:no" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:orientation="horizontal"
+        android:paddingEnd="0dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingStart="16dip"
+        android:paddingTop="15dip">
+
+    <TextView
+        android:id="@+id/book_publish_date"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:textColor="@color/textColorBookPrice"
+        android:textSize="12sp"
+        tools:text="20/3/2015" />
+    <TextView
+        android:id="@+id/publisher"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorBookPrice"
+        android:textSize="12sp"
+        tools:text="publisher: XYZ" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="@color/textColorBookPrice"
+        android:textSize="12sp"
+        tools:text="price: 200EGP" />
+    </LinearLayout>
+</LinearLayout>

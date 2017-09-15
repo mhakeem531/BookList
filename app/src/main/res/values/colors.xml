@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03f720</color>
+    <color name="colorPrimaryDark">#0a9f02</color>
+    <color name="colorAccent">#b2f107</color>
+    <color name="searchColor2">#b2f107</color>
+    <color name="searchColor">#b2f107</color>
+    <color name="textColorBookTitle">#080808</color>
+    <color name="textColorBookAuthors">#cc424143</color>
+    <color name="textColorBookLanguage">#cc903ee2</color>
+    <color name="textColorBookBdfAvailability">#ec0a0a</color>
+    <color name="textColorBookPrice">#04f568</color>
+</resources>
